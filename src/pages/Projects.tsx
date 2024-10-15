@@ -1,5 +1,6 @@
 import PageLayout from '../components/PageLayout';
 import styled from 'styled-components';
+import Calculator from '../components/Calculator';
 
 const ProjectsCont = styled.div`
     adding-bottom: calc(2em + 50px);
@@ -74,6 +75,14 @@ function Projects() {
                         <p>Developed a dynamic and responsive web application by leveraging a decoupled architecture with React for front-end and Flask-Python for back-end, resulting in an improvement in platform scalability and robustness.</p>
                         <p>Enhanced traveler experience by integrating public APIs for real-time weather updates and hotel searches, providing users with more accurate and up-to-date information, thereby notably increasing user satisfaction.</p>
                         <p>Boosted user engagement by 25% through Supabase database implementation with seamless CRUD operations and GitHub Authentication for personalized user experiences.</p>
+                    </ProjectDetail>
+                </SingleProjectCont>
+
+                <SingleProjectCont>
+                    <img src="/calc.gif" alt="FunCalculator" />
+                    <ProjectDetail>
+                        <h3>Fun Calculator</h3>
+                        <Calculator />
                     </ProjectDetail>
                 </SingleProjectCont>
             </ProjectsCont>
