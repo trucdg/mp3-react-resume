@@ -113,6 +113,10 @@ export default function Calculator() {
                 for (let i = 0; i < num2; i++) {
                     result = result * num1;
                 }
+            } else if (num2 < 0) {
+                for (let i = 0; i < -num2; i++) {
+                    result = result * (1/num1)
+                }
             }
 
             setOutput(result.toString());
